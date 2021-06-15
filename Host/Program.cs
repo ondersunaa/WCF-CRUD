@@ -14,7 +14,7 @@ namespace Host
             using (ServiceHost host = new ServiceHost(typeof(NorthwindService.NorthwindService)))
             {
                 host.Open();
-                Console.WriteLine("Başladı");
+                Console.WriteLine("Başladı @" + DateTime.Now);
                 Console.ReadLine();
             }
         }
